@@ -10,4 +10,4 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
  - The user can have limited or unlimited guesses before either getting the word right or running out of chances.
 
 
-This project showcases that the author has learnt the use of functions, classes, methods, docstrings and Github,
+This project showcases that the author has learned the use of functions, classes, methods, docstrings and Github,

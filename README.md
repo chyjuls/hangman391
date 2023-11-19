@@ -10,4 +10,6 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
  - The user can have limited or unlimited guesses before either getting the word right or running out of chances.
 
 
-This project showcases that the author has learned the use of functions, classes, methods, docstrings and Github,
+This project showcases that the author has learned the use of functions, classes, methods, docstrings and Github.
+The code is updated continuously using git commit to a branch named new_branch_1, the first file milestone_2 was not committed before
+milestone_3: This has been done recursively.

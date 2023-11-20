@@ -13,3 +13,9 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 This project showcases that the author has learned the use of functions, classes, methods, docstrings and Github.
 The code is updated continuously using git commit to a branch named new_branch_1, the first file milestone_2 was not committed before
 milestone_3: This has been done recursively.
+
+This project, which is the second project within my AICore bootcamp journey also tests my ability to use Github for version control.
+The first file created was milestone_2.py, but this was committed after the second file milestone_3.py (mistakes happen), from milestone_3.py to milestone_5.py have been committed in the right order. 
+There are three branches: the main and two branches, viz., new_branch_1 and new_branch_2.
+After commiting the latest file which is milestone_5.py to new_branch_2, this will be merged with the main branch, signifying that the project is complete!
+

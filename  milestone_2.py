@@ -1,5 +1,6 @@
 import random
 ''' imports the random module which contains a variety of things to do with random number generation.'''
+
 def Choice():
     word_list =['mango','orange','banana','apple','grapes']  #print(word_list)
     random.choice(word_list)

@@ -1,7 +1,6 @@
 import random
 
 
- 
 '''This class represents a game of Hangman.'''
 ''' It takes a list of words as an input and randomly selects one of them as the word to be guessed.'''
 '''The user can guess letters until they either win or lose.'''
@@ -17,9 +16,6 @@ class Hangman:
         self.num_letters = len(set(self.word))
         self.num_lives = num_lives
         self.list_of_guesses = []
-    
-# This method checks if the guessed letter is in the word and updates the word_guessed list accordingly.
-
 
     def check_guess(self, guess):
         guess = guess.lower()
@@ -32,7 +28,7 @@ class Hangman:
                     self.word_guessed[i] = guess
                 if '_' not in self.word_guessed:
                     print(f"Congratulations! You've guessed the word: {''.join(self.word_guessed)}")
-                    return True    
+                    break # fixed bug: add break, to stop the game when the word is guessed   
             self.num_letters -= 1
         else: 
             self.num_lives -= 1
@@ -40,10 +36,11 @@ class Hangman:
             print(f'You have {self.num_lives} lives left.')
         if self.num_lives <= 0:
                 print(f"Game over! The word was: {self.word}")
-                return True
+                
+    
+    # fixed bug: add break, to stop the game when the number of lives is 0
              # code when the number of lives is 0, fixing a bug...
-
-
+    """This method checks if the guessed letter is in the word and updates the word_guessed list accordingly"""
 
 
     def ask_for_input(self):
@@ -57,9 +54,10 @@ class Hangman:
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
+                break
 
+            
 '''This function takes a list of words as an input and starts a game of Hangman.'''
-
 
 
 def play_game(word_list):
@@ -80,6 +78,10 @@ def play_game(word_list):
 
       # Define your word list
 
+def main():
+    print (f"First module's name: {__name__}")
+if __name__ == '__main__':
+    main()
 word_list = ['mango', 'orange', 'banana', 'apple', 'grapes']
 play_game(word_list)
 
